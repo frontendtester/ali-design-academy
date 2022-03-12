@@ -89,6 +89,7 @@ img {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
+  text-align: center;
   background-color: transparent;
   color: #000;
   text-transform: uppercase;
@@ -105,6 +106,10 @@ img {
   border: 1px solid #000;
   border-radius: 8px;
   white-space: nowrap;
+}
+
+.arrow-button__text {
+  flex-grow: 1;
 }
 
 .arrow-button--big .arrow-button__inner {
@@ -133,6 +138,7 @@ img {
   padding-bottom: 40px;
   font-size: 20px;
   font-weight: 400;
+  background-color: #fff;
 }
 
 .site-header__container {
@@ -280,5 +286,36 @@ only screen and (                min-resolution: 2dppx) {
 
   .site-header__cta {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .site-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .site-header__logo {
+    margin-right: auto;
+  }
+
+  .site-header__cta-arrow {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .site-header__cta {
+    position: fixed;
+    z-index: 10;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
   }
 }
