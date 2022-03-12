@@ -60,7 +60,7 @@ body {
   line-height: 1.5;
   font-weight: 300;
   background-color: #fff;
-  color: #222;
+  color: #000;
 }
 
 img {
@@ -80,9 +80,105 @@ img {
 }
 
 
+/* ARROW-BUTTON */
+.arrow-button {
+  display: inline-block;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+.arrow-button__inner {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.arrow-button--big .arrow-button__inner {
+  padding: 13px 20px;
+}
+
+.arrow-button__icon {
+  margin-left: 10px;
+}
+
+.arrow-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+
+/* SITE-HEADER */
+.site-header {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+}
+
+.site-header__logo {
+  margin-right: 160px;
+  text-decoration: none;
+}
+
+.site-header__logo-img {
+  display: block;
+}
+
+.site-header__sitenav {
+  margin-right: 100px;
+}
+
+
+/* SITENAV */
+.sitenav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.sitenav__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.sitenav__link:hover {
+  opacity: 0.8;
+}
+
+.sitenav__link:active {
+  opacity: 0.6;
+}
+
+.site-header__cta {
+  margin-left: auto;
 }
 
 
