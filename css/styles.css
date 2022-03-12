@@ -168,6 +168,7 @@ img {
 .sitenav__link {
   color: #000;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .sitenav__link:hover {
