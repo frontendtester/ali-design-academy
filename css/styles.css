@@ -86,6 +86,8 @@ img {
   padding: 0;
   border: 0;
   border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
   background-color: transparent;
   color: #000;
@@ -152,6 +154,10 @@ img {
   margin-right: 100px;
 }
 
+.site-header__toggler {
+  display: none;
+}
+
 
 /* SITENAV */
 .sitenav__list {
@@ -192,4 +198,87 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
+}
+
+
+/* RESPONSIVENESS */
+@media only screen and (max-width: 1300px) {
+  .site-header__logo,
+  .site-header__sitenav {
+    margin-right: 60px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .site-header {
+    font-size: 18px;
+  }
+
+  .sitenav__item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .arrow-button--big .arrow-button__inner {
+    padding: 12px;
+  }
+
+  .site-header {
+    position: relative;
+    z-index: 99;
+  }
+
+  .site-header__container {
+    align-items: stretch;
+  }
+
+  .site-header__sitenav {
+    display: none;
+  }
+
+  .site-header__sitenav--open {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: block;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    margin-right: 0;
+    background-color: #fff;
+  }
+
+  .site-header__toggler {
+    display: block;
+    padding: 8px 16px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin-left: 30px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .site-header__toggler-icon {
+    display: block;
+    min-width: 24px;
+  }
+
+  .sitenav__list {
+    flex-direction: column;
+  }
+
+  .sitenav__item {
+    text-align: right;
+  }
+
+  .sitenav__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .site-header__cta {
+    font-size: 14px;
+  }
 }
