@@ -35,6 +35,10 @@
   font-display: swap;
 }
 
+:root {
+  --heading-font-stack: "PP Neue Machina", "Poppins", "Arial", sans-serif;
+}
+
 
 /* GLOBAL */
 html {
@@ -249,7 +253,7 @@ img {
 .hero__heading {
   margin-top: 0;
   margin-bottom: 8px;
-  font-family: "PP Neue Machina", "Poppins", "Arial", sans-serif;
+  font-family: var(--heading-font-stack);
   font-size: 76px;
   line-height: 90px;
 }
@@ -273,6 +277,79 @@ img {
   z-index: 1;
   right: -30px;
   top: 0;
+}
+
+
+/* INDEX-COURSES */
+.index-courses {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.index-courses__heading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: var(--heading-font-stack);
+  font-size: 39px;
+  line-height: normal;
+}
+
+.index-courses-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: -40px;
+  margin-bottom: -40px;
+  list-style: none;
+}
+
+.index-courses__item {
+  width: calc(100% / 2 - 40px);
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.index-courses__bottom {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.index-courses__more-link {
+  font-weight: 500;
+  color: #19B100;
+  text-transform: uppercase;
+}
+
+/* INDEX-COURSE */
+.index-course {
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.index-course__info {
+  padding: 30px;
+  background-color: #f3f3f3;
+}
+
+.index-course__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 31px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.index-course__description {
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
+.index-course__img {
+  width: 325px;
+  height: 303px;
+  object-fit: cover;
 }
 
 
