@@ -144,6 +144,8 @@ img {
 .site-header__container {
   display: flex;
   align-items: center;
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .site-header__logo {
@@ -209,6 +211,11 @@ only screen and (                min-resolution: 2dppx) {
 
 /* RESPONSIVENESS */
 @media only screen and (max-width: 1300px) {
+  .site-header__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .site-header__logo,
   .site-header__sitenav {
     margin-right: 60px;
@@ -291,6 +298,11 @@ only screen and (                min-resolution: 2dppx) {
 
 @media only screen and (max-width: 600px) {
   .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .site-header__container {
     padding-left: 20px;
     padding-right: 20px;
   }
