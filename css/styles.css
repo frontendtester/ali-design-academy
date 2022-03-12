@@ -589,6 +589,23 @@ only screen and (                min-resolution: 2dppx) {
   }
 }
 
+@media only screen and (max-width: 750px) {
+  .registration__inner {
+    padding: 30px;
+  }
+
+  .registration-form__group {
+    width: 100%;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .registration-form__submit {
+    margin-top: 0;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .hero__content {
     max-width: 100%;
