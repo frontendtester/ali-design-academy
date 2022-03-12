@@ -348,7 +348,7 @@ img {
 
 .index-course__img {
   width: 325px;
-  height: 303px;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -399,6 +399,10 @@ only screen and (                min-resolution: 2dppx) {
   .hero__img {
     height: 600px;
   }
+
+  .index-course__img {
+    width: 200px;
+  }
 }
 
 @media only screen and (max-width: 1180px) {
@@ -418,6 +422,10 @@ only screen and (                min-resolution: 2dppx) {
 
   .hero__img {
     height: 400px;
+  }
+
+  .index-course__img {
+    width: 150px;
   }
 }
 
@@ -498,6 +506,28 @@ only screen and (                min-resolution: 2dppx) {
   }
 }
 
+@media only screen and (max-width: 950px) {
+  .index-course {
+    flex-direction: column-reverse;
+  }
+
+  .index-course__info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .index-course__arrow-button {
+    margin-top: auto;
+  }
+
+  .index-course__img {
+    width: 100%;
+    height: 150px;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   .hero__content {
     max-width: 100%;
@@ -508,6 +538,24 @@ only screen and (                min-resolution: 2dppx) {
 
   .hero__img {
     display: none;
+  }
+
+  .index-courses-list {
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .index-courses__item {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .index-courses__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .index-course__img {
+    height: 100px;
   }
 }
 
