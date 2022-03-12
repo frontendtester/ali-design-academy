@@ -353,6 +353,67 @@ img {
 }
 
 
+/* REGISTRATION */
+.registration {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f3f3f3;
+}
+
+.registration__inner {
+  max-width: 1027px;
+  padding: 40px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.registration__heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 31px;
+  line-height: 46px;
+  font-weight: 500;
+}
+
+.registration__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.registration-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.registration-form__group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 30%;
+  margin-right: 5%;
+}
+
+.registration-form__group:nth-child(3n) {
+  margin-right: 0;
+}
+
+.registration-form__field {
+  flex-grow: 1;
+  padding: 5px;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.registration-form__submit {
+  margin-top: 30px;
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
