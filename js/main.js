@@ -35,3 +35,27 @@ if (elSiteHeaderToggler) {
 //     });
 //   });
 // }
+
+const elTeachersPrevButton = document.querySelector('.js-teachers-prev-button');
+const elTeachersNextButton = document.querySelector('.js-teachers-next-button');
+
+var slider = tns({
+  container: '.index-teachers__list',
+  items: 1,
+  slideBy: 1,
+  mouseDrag: true,
+  speed: 400,
+  gutter: 40,
+  prevButton: elTeachersPrevButton,
+  nextButton: elTeachersNextButton,
+  nav: false,
+  arrowKeys: true,
+  responsive: {
+    700: {
+      items: 2
+    },
+    1100: {
+      items: 3
+    }
+  }
+});
